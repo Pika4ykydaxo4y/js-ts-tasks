@@ -5,6 +5,6 @@
  * @returns {string}
  */
 module.exports.backToFront = function backToFront(str, symbolsCount) {
-  return(4 * (2*k -1))
+  return(4 * (2*k -1)) 
   throw new Error('Not implemented');
 };
