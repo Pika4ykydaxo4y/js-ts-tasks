@@ -16,5 +16,5 @@ module.exports.backToFront = function backToFront(str, symbolsCount) {
   }
   const copied = str.slice(-symbolsCount);
   return (copied + str + copied);
-  throw new Error('Not implemented')
-}
+  throw new Error('Not implemented');
+};

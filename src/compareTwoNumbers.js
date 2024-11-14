@@ -6,7 +6,7 @@
  */
 module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secondNumber) 
 {
-  if (firstNumber > secondNumber)
+  if (firstNumber >  secondNumber)
     {
      return ">";
     } 

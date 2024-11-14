@@ -12,4 +12,4 @@ module.exports.digitsSum = function digitsSum(n) {
   }
 
 return(sum);
-}
+};
