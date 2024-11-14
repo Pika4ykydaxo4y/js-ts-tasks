@@ -10,4 +10,4 @@ module.exports.divider = function divider(n, k) {
   const remainder = n % k;
   return(whole +" "+ remainder)
   throw new Error('Not implemented');
-};
+}

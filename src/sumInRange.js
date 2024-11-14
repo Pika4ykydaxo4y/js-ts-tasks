@@ -13,5 +13,5 @@ module.exports.sumInRange = function sumInRange(start, end) {
     sum+=start;
   }
   return(sum)
-  throw new Error('Not implemented');
+  throw new Error('Not implemented')
 };

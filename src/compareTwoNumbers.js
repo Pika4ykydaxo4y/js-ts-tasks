@@ -18,5 +18,5 @@ module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secon
       {
       return "=";
       } 
-  throw new Error('Not implemented')
+  throw new Error('Not implemented');
 };
