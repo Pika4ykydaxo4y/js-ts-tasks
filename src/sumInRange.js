@@ -6,12 +6,13 @@
  */
 module.exports.sumInRange = function sumInRange(start, end) {
   start = Number(start);
-  end = Number (end);
+  end = Number(end);
   var sum = 0;
-  for (; start <= end; start++)
-  {
-    sum+=start;
+  if (start > end) [start, end] = [end, start];
+
+  for (; start <= end; start++) {
+    sum += start;
   }
-  return(sum)
+  return sum;
   throw new Error('Not implemented');
 };

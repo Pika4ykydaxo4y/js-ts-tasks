@@ -6,8 +6,7 @@
  * @returns {number}
  */
 module.exports.divider = function divider(n, k) {
-  const whole = (n-(n%k))/k;
+  const whole = (n - (n % k)) / k;
   const remainder = n % k;
-  return(whole +" "+ remainder)
-  throw new Error('Not implemented');
+  return whole + ' ' + remainder;
 };
