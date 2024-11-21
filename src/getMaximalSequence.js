@@ -5,22 +5,21 @@
  */
 module.exports.getMaximalSequence = function getMaximalSequence(arr) {
   let maxArr = [];
-  let currentSequence = [arr[0]];
+  let mass = [arr[0]];
 
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] === arr[i - 1]) {
-      currentSequence.push(arr[i]);
+      mass.push(arr[i]);
     } else {
-      if (currentSequence.length > maxArr.length) {
-        maxSequence = currentSequence;
+      if (mass.length > maxArr.length) {
+        maxArr = mass;
       }
-      currentSequence = [arr[i]];
+      mass = [arr[i]];
     }
   }
 
-  // Final check for the last sequence
-  if (currentSequence.length > maxArr.length) {
-    maxSequence = currentSequence;
+  if (mass.length > maxArr.length) {
+    maxArr = mass;
   }
 
   return maxArr;
