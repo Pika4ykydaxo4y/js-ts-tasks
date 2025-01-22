@@ -77,9 +77,9 @@ module.exports.createUsers = function (data) {
 
 /**
  * Find Users in Array of Users who's age equals the provided age
- * @param {Array<User>} users
+ * @param {Array<Users>} users
  * @param {number} age
- * @returns {Array<User>}
+ * @returns {Array<Users>}
  */
 module.exports.findUsersByAge = function (users, age) {
   return users.filter(el => el.age === age);
