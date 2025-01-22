@@ -5,6 +5,21 @@
  * @delay {number}
  * @return {function}
  */
+
 module.exports.debounce = function debounce(fn, delay) {
-  throw new Error('Not implemented'); // remove me and write your code
+  let timeout;
+  let lastArgs;
+
+  return function (...args) {
+    lastArgs = args;
+
+    if (!timeout) {
+      fn.apply(this, lastArgs);
+    }
+
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      timeout = null;
+    }, delay);
+  };
 };
